@@ -27,6 +27,12 @@
             .hole {
                 fill:rgb(10, 10, 29)
             }
+            .heart {
+                fill:red
+            }
+            .boost {
+                fill: yellow
+            }
             .gameover {
                 font-family: 'Press Start 2P', cursive;
                 font-size: 33px;
@@ -50,10 +56,12 @@
         <h1>Space Invaders</h1>
         <svg id="canvas" class="svg" width="600" height="600">
             <g id="ship" transform="translate(300,550)">
-            <polygon class="ship" points="-15,20 15,20 0,-20"></polygon>
+            <!-- <polygon class="ship" points="-15,20 15,20 0,-20"></polygon> -->
+            <polygon class="ship" points="0,-20 -4,-12 -4,4 -12,4 -12,-4 -16,4 -16,8 -12,16 -4,16 0,20 4,16 12,16 16,8 16,4 12,-4 12,4 4,4 4,-12" ></polygon>
             </g>
             <text id="level" class="text" x="20" y="30">Level: 1</text>
             <text id="score" class="text" x="450" y="30">Score: 000</text>
+            <text id="lives" class="text" x="240" y="30">Lives: 1</text>
             <text id="gameover"  class="gameover"x="140" y="300"></text>
             <text id="gameoverSubtext" class="subtext" x="185" y="330"></text>
         </svg>
